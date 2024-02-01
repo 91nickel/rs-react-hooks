@@ -13,11 +13,15 @@ import { UseUpdateEffectDemo } from './components/useUpdateEffectDemo'
 import { UseArrayDemo } from './components/useArrayDemo'
 import { UseThrottleDemo } from './components/useThrottleDemo'
 import { UseFetchDemo } from './components/useFetchDemo'
+import { UseHoverDemo } from './components/useHoverDemo'
 
 function App () {
     return (
         <div className="App">
             <header className="App-header">
+                <div>
+                    <UseHoverDemo/>
+                </div>
                 <div>
                     <UseLocalStorageDemo/>
                 </div>
