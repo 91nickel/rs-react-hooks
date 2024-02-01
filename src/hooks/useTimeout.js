@@ -12,18 +12,24 @@ export function useTimeout (callback, delay) {
         timeoutRef.current = setTimeout(() => callbackRef.current(), delay)
     }, [delay])
 
-    const clear = () => {
+    const clear = useCallback(() => {
         if (timeoutRef.current) {
             clearTimeout(timeoutRef.current)
         }
 
-    }
+    }, [])
 
     useEffect(() => {
         set()
-    }, [set])
+        return clear
+    }, [delay, set, clear])
+
+    const reset = useCallback(() => {
+        clear()
+        set()
+    }, [clear, set])
 
     return {
-        set, clear
+        clear, reset
     }
 }
