@@ -11,14 +11,18 @@ import { UseDebounceDemo } from './components/useDebounceDemo'
 import { UseUpdateEffectDemo } from './components/useUpdateEffectDemo'
 import { UseArrayDemo } from './components/useArrayDemo'
 import { UseThrottleDemo } from './components/useThrottleDemo'
+import { UseFetchDemo } from './components/useFetchDemo'
 
 function App () {
     return (
         <div className="App">
             <header className="App-header">
                 <div>
-                    <UseThrottleDemo />
+                    <UseFetchDemo />
                 </div>
+                {/*<div>*/}
+                {/*    <UseThrottleDemo />*/}
+                {/*</div>*/}
                 {/*<div>*/}
                 {/*    <UseArrayDemo />*/}
                 {/*</div>*/}
