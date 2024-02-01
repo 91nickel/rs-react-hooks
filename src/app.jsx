@@ -1,4 +1,5 @@
 import { UseLocalStorageDemo } from './components/useLocalStorageDemo'
+import { UseLocalStorageDemo1 } from './components/useLocalStorageDemo1'
 import { UseToggleDemo } from './components/useToggleDemo'
 import { UseTimeoutDemo } from './components/useTimeoutDemo'
 import { UseRefDemo } from './components/useRefDemo'
@@ -18,7 +19,10 @@ function App () {
         <div className="App">
             <header className="App-header">
                 <div>
-                    <UseFetchDemo />
+                    <UseLocalStorageDemo/>
+                </div>
+                <div>
+                    <UseFetchDemo/>
                 </div>
                 {/*<div>*/}
                 {/*    <UseThrottleDemo />*/}
@@ -45,7 +49,7 @@ function App () {
                 {/*    <UseCallbackDemo />*/}
                 {/*</div>*/}
                 {/*<div>*/}
-                {/*    <UseLocalStorageDemo />*/}
+                {/*    <UseLocalStorageDemo1 />*/}
                 {/*</div>*/}
                 {/*<div>*/}
                 {/*    <UseToggleDemo />*/}

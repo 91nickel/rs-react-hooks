@@ -1,19 +1,21 @@
 import { useLocalStorage } from '../hooks/useLocalStorage'
-import { useUpdateLogger } from '../hooks/useUpdateLogger'
 
 export function UseLocalStorageDemo () {
-    const [value, setValue] = useLocalStorage('name', '')
-    useUpdateLogger(value)
+    const [token, {setItem, removeItem}] = useLocalStorage('token')
 
     return (
-        <>
-            <h2>UseLocalStorageDemo</h2>
-            <input
-                type="text"
-                value={value}
-                onChange={e => setValue(e.target.value)}
-            />
-        </>
+        <div>
+            <p>
+                Твой токен: {token}
+            </p>
+            <div>
+                <button onClick={() => setItem('new-token')}>
+                    Задать токен
+                </button>
+                <button onClick={() => removeItem()}>
+                    Удалить токен
+                </button>
+            </div>
+        </div>
     )
-
 }
