@@ -22,12 +22,12 @@ function App () {
                 <div>
                     <UseHoverDemo/>
                 </div>
-                {/*<div>*/}
-                {/*    <UseLocalStorageDemo/>*/}
-                {/*</div>*/}
-                {/*<div>*/}
-                {/*    <UseFetchDemo/>*/}
-                {/*</div>*/}
+                <div>
+                    <UseLocalStorageDemo/>
+                </div>
+                <div>
+                    <UseFetchDemo/>
+                </div>
                 {/*<div>*/}
                 {/*    <UseThrottleDemo />*/}
                 {/*</div>*/}
