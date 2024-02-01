@@ -4,12 +4,21 @@ const key = 'token'
 
 export function useLocalStorage (token) {
 
-    const [value, setValue] = useState(token)
+    const [value, setValue] = useState('')
 
-    function removeValue () {
+    useEffect(() => {
+        setItem(token)
+    }, [])
+
+    function setItem (value) {
+        localStorage.setItem(key, value)
+        return setValue(value)
+    }
+
+    function removeItem () {
         localStorage.removeItem(key)
         return setValue(null)
     }
 
-    return [value, {setItem: setValue, removeItem: removeValue}]
+    return [value, {setItem, removeItem}]
 }
