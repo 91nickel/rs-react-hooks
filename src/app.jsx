@@ -14,20 +14,24 @@ import { UseArrayDemo } from './components/useArrayDemo'
 import { UseThrottleDemo } from './components/useThrottleDemo'
 import { UseFetchDemo } from './components/useFetchDemo'
 import { UseHoverDemo } from './components/useHoverDemo'
+import { UseViewportSizeDemo } from './components/useViewportSizeDemo'
 
 function App () {
     return (
         <div className="App">
             <header className="App-header">
                 <div>
-                    <UseHoverDemo/>
+                    <UseViewportSizeDemo/>
                 </div>
-                <div>
-                    <UseLocalStorageDemo/>
-                </div>
-                <div>
-                    <UseFetchDemo/>
-                </div>
+                {/*<div>*/}
+                {/*    <UseHoverDemo/>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <UseLocalStorageDemo/>*/}
+                {/*</div>*/}
+                {/*<div>*/}
+                {/*    <UseFetchDemo/>*/}
+                {/*</div>*/}
                 {/*<div>*/}
                 {/*    <UseThrottleDemo />*/}
                 {/*</div>*/}
