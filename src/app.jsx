@@ -1,6 +1,6 @@
 import { UseLocalStorageDemo } from './components/useLocalStorageDemo'
 import { UseLocalStorageDemo1 } from './components/useLocalStorageDemo1'
-import { UseToggleDemo } from './components/useToggleDemo'
+import { UseToggleDemoOld } from './components/useToggleDemo'
 import { UseTimeoutDemo } from './components/useTimeoutDemo'
 import { UseRefDemo } from './components/useRefDemo'
 import { UseMemoDemo } from './components/useMemoDemo'
@@ -64,7 +64,7 @@ function App () {
                 {/*    <UseLocalStorageDemo1 />*/}
                 {/*</div>*/}
                 {/*<div>*/}
-                {/*    <UseToggleDemo />*/}
+                {/*    <UseToggleDemoOld />*/}
                 {/*</div>*/}
                 {/*<div>*/}
                 {/*    <UseTimeoutDemo />*/}

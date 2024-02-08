@@ -1,7 +1,7 @@
-import { useToggle } from '../hooks/useToggle'
+import { useToggleOld } from '../hooks/useToggle'
 
-export function UseToggleDemo () {
-    const [state, setState] = useToggle(false)
+export function UseToggleDemoOld () {
+    const [state, setState] = useToggleOld(false)
 
     return (
         <>
