@@ -1,6 +1,6 @@
 import { UseLocalStorageDemo } from './components/useLocalStorageDemo'
 import { UseLocalStorageDemo1 } from './components/useLocalStorageDemo1'
-import { UseToggleDemoOld } from './components/useToggleDemo'
+import { UseToggleDemo, UseToggleDemoOld } from './components/useToggleDemo'
 import { UseTimeoutDemo } from './components/useTimeoutDemo'
 import { UseRefDemo } from './components/useRefDemo'
 import { UseMemoDemo } from './components/useMemoDemo'
@@ -22,8 +22,11 @@ function App () {
         <div className="App">
             <header className="App-header">
                 <div>
-                    <UseWindowScrollDemo />
+                    <UseToggleDemo />
                 </div>
+                {/*<div>*/}
+                {/*    <UseWindowScrollDemo />*/}
+                {/*</div>*/}
                 {/*<div>*/}
                 {/*    <UseViewportSizeDemo/>*/}
                 {/*</div>*/}
